@@ -1,0 +1,24 @@
+8)
+
+Alice wrote a new algorithm which works in O(n3) where n can be atmost 106. Bob told Alice that it will take years to finish in the worst case. Do you agree with Bob? If yes, then approximately how many years will it take to finish? Assume Alice’s computer can run 109 instructions in 1 second.
+
+Alice's algorithm time complexity is O(n^3)
+and here n = 10^6;
+so this program's runtime will be = (10^6)^3 .
+And a computer can exicute  10^9 istructions within a second.
+So this program will run (10^18/10^9) second.
+It is approximately 31.71 year need to run this program . 
+
+5)
+
+vector<int>d[n+1];
+for(int i=1 ; i<=n ; i++)
+	for(int j=i ; j<=n ; j = j+i )
+		d[j].push_back(i);
+
+Space Complexity : In this question (n+1) size vector are given . So space comlexity must be O(n+1). Here 1 is contant so we will not count 1 . Finally space complexity will be O(n) .
+Time Complexity :  there 2 loop are iterring 1 to n times . Though in the 2nd loop don't iterate exactly n times ,  it will be counted n times . Finaally time complexity will be O(n^2) .
+
+9)
+
+4 1 5 2 6 3
